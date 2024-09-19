@@ -1,0 +1,215 @@
+
+
+  .bannerArea{
+    background-image: url(images/word-events-written-multicolored-bright-wooden-cubes-light-blue-background-201535177.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+}
+  
+  .menu-toggle {
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 2px;
+    background-color: #fff; /* Example color */
+    margin: 6px 0;
+  }
+  
+  .content{
+    text-align: end;
+  }
+  .socials{
+    color: #0b4f77;
+    align-items: right;
+    width: 100%;
+    max-height: 100px;
+   font-size: 22px;
+  }
+  .socials ul li{
+    width: 200px;
+  }
+  .nav {
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+}
+.socio-logo{
+
+    display:flex;
+    margin: 15px;
+    padding-top: 10px;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    justify-content: space-between; /* Align items to the start and end of the container */
+    align-items: center; /* Center items vertically */
+    
+  }
+.logo img {
+    max-height: 100px; 
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 30px; 
+    border-radius: 70px;
+    
+   
+}
+.navbar {
+    margin-top: 10px;
+    background-color: #3a657e; /* background color */
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #fff; /* Example color */
+    margin: 6px 0;
+}
+
+
+/* Media query to hide navigation on mobile devices */
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the navigation menu by default on small screens */
+    }
+
+    .nav-links.active {
+        display: block; /* Show the navigation menu when active */
+    }
+}
+
+
+.nav-links {
+  align-items: center;
+  text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    margin-right: 0;
+    height: 5vh;
+}
+
+.nav-links li {
+    font-size: 20px;
+    display: inline;
+    margin: 40px;
+    width: 100px;
+   text-align: center;
+   text-transform: capitalize;
+   height: 50vh;
+
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* Remove margin from the last nav link */
+}
+
+.nav-links li a {
+    color: #0b1863; 
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+
+.nav-links li a:hover {
+   
+    color: #b7c9c5;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    color:  #007bff;
+    text-align: center;
+}
+h2{
+    text-align: center;
+
+}
+
+.service-section{
+  height: 80vh;
+  background-color: #e5dff7;
+  padding: 20px;
+  text-align: center;
+}
+
+.service-section .service-title {
+  text-align: center;
+   font-size: 40px; 
+  color: #027e63;
+  text-transform: uppercase;
+   font-weight: bolder;
+  }
+  .service-section .service-title span{
+    color: #031f38;
+    
+   
+  }
+  .services {
+    display: flex;
+    padding: 30px;
+    margin: 20px;
+    width: 100%; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    text-transform: capitalize;
+  }
+  .services ul{
+    list-style: none;
+
+  }
+  .services h2{
+    font-size: 35px;
+    text-decoration: dotted;
+    color: #6b2222;
+    text-transform: capitalize;
+  }
+  .services .sunday{
+    text-transform: capitalize;
+    color: #027e63;
+    flex: 1;
+    width:33.3%;
+  }
+  .services .weekly{
+    color: #027e63;
+    width:33.3%;
+  }
+  .services .others{
+    color: #027e63;
+    width:33.3%;
+  }
+
+img{
+    width: 300px;
+    height:200px;
+    padding: 20px;
+    flex: 1;
+    max-width: 33.33%;
+    border-radius: 30px;
+}
+
+footer{
+    font-size: 25px;
+    
+    color: #e5dff7;
+    background-color: #1b0c0c;
+  }
+  footer p{
+    text-align: center;
+    color: azure;
+    text-align:justify;
+  }

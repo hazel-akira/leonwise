@@ -1,0 +1,330 @@
+/* Navbar container */
+.navbar {
+    position: sticky;
+    padding: 10px 0;
+    height: 80px; /* Fixed height */
+    width: 100%;
+    top: 0; 
+    z-index: 1000; /* Ensure it stays on top */
+    background-color: #002B36; /* Banner area color */
+}
+
+/* Container for navbar content */
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; /* Center the content */
+    margin: 0 auto; /* Center horizontally */
+    padding: 0 20px; /* Horizontal padding */
+}
+
+/* Logo */
+.navbar .logo img {
+    max-height: 50px; /* Limit the logo height */
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Space between items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #027e63; 
+    font-size: 16px; /* Font size */
+    font-weight: 500; /* Font weight */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #f0f0f0; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stack links vertically */
+        width: 100%; /* Full width */
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Vertical margin for items */
+    }
+}
+
+.video-container{
+    padding: 0;
+     position: relative;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.4);
+   
+}
+.content{
+text-align: center;
+
+
+}
+.content h1{
+font-size: 105px;
+color: #ffffff;
+margin-bottom: 50px;
+}
+.content a{
+font-size: 25px;
+color: #fff;
+text-decoration: none;
+border: 2px solid #fff;
+padding: 5px 20px;
+border-radius: 50px;
+transition: 0.3s;
+}
+.content a:hover{
+background-color: #fff;
+color: #000;
+}
+
+#background-clip {
+ position: absolute;
+ overflow: hidden;
+ right: 0;
+ bottom: 0;
+ z-index: -1;
+ 
+}
+
+.content {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+ color: #fff;
+ text-transform: uppercase;
+}
+
+.content h1 {
+ font-size: 3em;
+ margin-bottom: 20px;
+}
+
+.content p {
+ font-size: 1.5em;
+}
+.content button{
+ background-color:calc(--darkColor);
+ color: #027e63;
+ border-radius: 20px;
+ width: 150px; /* Set the width */
+ height: 10px; /* Set the height */
+ padding: 10px 20px; /* Set padding to increase the clickable area */
+ font-size: 28px; /* Set the font size */
+}
+.content button:hover{
+ background-color: #3d3939;
+ color: blue;
+ border-radius: 20px;
+ size: 50px;
+}
+
+@media (min-aspect-ratio:16/9) {
+ #video-background{
+   width: 100%;
+   height: auto;
+
+ }
+ 
+}
+@media (min-aspect-ratio:16/9) {
+ #video-background{
+   width: auto;
+   height: 100%;
+   
+ }
+ 
+}
+
+.highlight-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.highlight-image {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.highlight-title {
+    font-size: 1.2rem;
+}
+
+
+.about-section {
+    background-color: #ada7a7;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .about-section .about-title {
+  text-align: center;
+   font-size: 40px;
+   color: #027e63;
+  text-transform: uppercase;
+  font-weight: bolder;
+  }
+  .about-section .about-title span{
+    color: #031f38;
+     
+  }
+  
+  
+  .about-image img {
+    flex: 1;
+    height: 65vh;
+    margin: 15px;
+    padding: 20px;
+    -o-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+}
+  
+  .about-content {
+    display: flex;
+    margin: 20px; /* Adjust margin as needed */
+  }
+  
+  .about-content .paragraph {
+     margin-left: 10px;
+     background-color: white;
+     -o-border-radius: 30px;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     border-radius: 30px;
+}
+  
+  .about-content p {
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-content .p1{
+    scrollbar-highlight-color: #0074D9;
+  }
+
+.paragraph {
+    margin-top: 20px;
+}
+
+
+
+.announcements {
+    padding: 40px 0;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.announcements-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+footer {
+    background-color: #002B36; /* Dark blue color */
+    color: #FFFFFF;
+    padding: 20px 0;
+}
+
+.socials a {
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.socials i {
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+
+
+.service-section {
+    padding: 40px 0;
+    background-color: #066ace; /* Light grey background to differentiate from other sections */
+}
+
+.service-title {
+    color: #013f2a;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between service lists */
+}
+
+.service-list {
+    list-style: none;
+    padding: 20px; /* Padding inside the service list */
+    margin: 0;
+    width: 300px;
+    background-color: #ffffff; /* White background for each list */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow effect */
+}
+
+.service-list h2 {
+    background-color: #002B36; /* Dark blue background */
+    color: #FFFFFF; /* White text color */
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.service-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Border between items */
+}
+
+.service-list li:last-child {
+    border-bottom: none; /* Remove border from last item */
+}

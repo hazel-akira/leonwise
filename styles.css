@@ -1,0 +1,348 @@
+
+::root{
+    --primaryColor:#FFFFFF;
+    --secondaryColor:#7FDBFF;
+    --lightColor:#FFD700;
+    --darkColor:#0074D9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+.socials{
+  color: #0b4f77;
+  align-items: right;
+  width: 100%;
+  max-height: 100px;
+ font-size: 22px;
+}
+.socials ul li{
+  width: 200px;
+}
+/* Default styles */
+.navbar {
+  background-color: #027e63; 
+  width: 100%;
+  height: 30vh;
+  display: inline-flex;
+  justify-content: left;
+  text-align: left;
+  align-items: left;
+  
+}
+
+.menu-toggle {
+  cursor: pointer;
+}
+
+/*.line {
+  width: 30px;
+  height: 2px;
+  background-color: #fff; 
+  margin: 6px 0;
+}
+*/
+
+
+
+.logo img {
+  display:flex;
+  margin: 15px;
+  padding-top: 10px;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  justify-content: space-between; /* Align items to the start and end of the container */
+  align-items: center;
+  
+}
+.menu-toggle {
+  cursor: pointer;
+}
+
+
+
+/* Navbar container */
+.navbar {
+  background-color: #002B36; /* Dark blue background */
+  padding: 10px 0; /* Padding for spacing */
+  position: fixed; /* Fixed position */
+  width: 100%; /* Full width */
+  top: 0; /* Stick to the top */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; /* Center the content */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 20px; /* Horizontal padding */
+}
+
+.navbar .logo img {
+  max-height: 50px; /* Limit the logo height */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px; /* Space between items */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  font-size: 16px; /* Font size */
+  font-weight: 500; /* Font weight */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+  color: #f0f0f0; /* Light grey on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar .container {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
+  }
+
+  .nav-links {
+      flex-direction: column; /* Stack links vertically */
+      width: 100%; /* Full width */
+  }
+
+  .nav-links li {
+      margin: 10px 0; /* Vertical margin for items */
+  }
+}
+
+
+
+
+.video-container{
+       padding: 0;
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.4);
+      
+}
+.content{
+  text-align: center;
+  
+
+}
+.content h1{
+  font-size: 105px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.content a{
+  font-size: 25px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 5px 20px;
+  border-radius: 50px;
+transition: 0.3s;
+}
+.content a:hover{
+background-color: #fff;
+color: #000;
+}
+
+#background-clip {
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.5em;
+  }
+  .content button{
+    background-color:calc(--darkColor);
+    color: #027e63;
+    border-radius: 20px;
+    width: 150px; /* Set the width */
+    height: 10px; /* Set the height */
+    padding: 10px 20px; /* Set padding to increase the clickable area */
+    font-size: 28px; /* Set the font size */
+  }
+  .content button:hover{
+    background-color: #3d3939;
+    color: blue;
+    border-radius: 20px;
+    size: 50px;
+  }
+
+  @media (min-aspect-ratio:16/9) {
+    #video-background{
+      width: 100%;
+      height: auto;
+
+    }
+    
+  }
+  @media (min-aspect-ratio:16/9) {
+    #video-background{
+      width: auto;
+      height: 100%;
+      
+    }
+    
+  }
+
+
+  
+
+
+
+  
+
+
+  .about-section {
+    background-color: #ada7a7;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .about-section .about-title {
+  text-align: center;
+   font-size: 40px;
+   color: #027e63;
+  text-transform: uppercase;
+  font-weight: bolder;
+  }
+  .about-section .about-title span{
+    color: #031f38;
+     
+  }
+  
+  
+  .about-image img {
+    flex: 1;
+    height: 65vh;
+    margin: 15px;
+    padding: 20px;
+    -o-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+}
+  
+  .about-content {
+    display: flex;
+    margin: 20px; /* Adjust margin as needed */
+  }
+  
+  .about-content .paragraph {
+     margin-left: 10px;
+     background-color: white;
+     -o-border-radius: 30px;
+     -webkit-border-radius: 30px;
+     -moz-border-radius: 30px;
+     -ms-border-radius: 30px;
+     border-radius: 30px;
+}
+  
+  .about-content p {
+    margin: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-content .p1{
+    scrollbar-highlight-color: #0074D9;
+  }
+  .service-section{
+    height: 80vh;
+    background-color: #e5dff7;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .service-section .service-title {
+    text-align: center;
+     font-size: 40px; 
+    color: #027e63;
+    text-transform: uppercase;
+     font-weight: bolder;
+    }
+    .service-section .service-title span{
+      color: #031f38;
+      
+     
+    }
+    .services {
+      display: flex;
+      padding: 30px;
+      margin: 20px;
+      width: 100%; 
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 15px;
+      text-transform: capitalize;
+    }
+    .services ul{
+      list-style: none;
+
+    }
+    .services h2{
+      font-size: 30px;
+      text-decoration: dotted;
+      color: #6b2222;
+      text-transform: capitalize;
+    }
+    .services .sunday{
+      text-transform: capitalize;
+      color: #027e63;
+      flex: 1;
+      width:33.3%;
+    }
+    .services .weekly{
+      color: #027e63;
+      width:33.3%;
+    }
+    .services .others{
+      color: #027e63;
+      width:33.3%;
+    }
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+   
+  
